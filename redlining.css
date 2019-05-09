@@ -1,0 +1,201 @@
+/* CSS files add styling rules to your content */
+
+body{
+  font-family: "Courier New", monospace;
+  color: white;
+  margin: 2em;
+  background: black;
+}
+
+h1 {
+    color: #f9faf3;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: .05em;
+    margin: 0 0 .2em 0;
+    text-shadow: 4px 4px 0px #cc0029;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-left: 20px;
+    float: left;
+}
+
+h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Andale Mono", monospace;
+  color: white;
+}
+
+h3 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Andale Mono", monospace;
+  color: black;
+}
+
+h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Andale Mono", monospace;
+  color: red;
+}
+
+h4-black {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Andale Mono", monospace;
+  color: black;
+}
+
+
+a{
+  color:#AA35EC;
+  font-size:1em;
+  font-family: "Avenir Next", sans-serif;
+  letter-spacing:2px;
+}
+
+.menu{
+  width: 550px;
+  height: 80px;
+  float: right;
+  list-style-type: none;
+  z-index: 1;
+  padding-top:20px;
+  padding-left:0px;
+  
+}
+
+.menu li{
+  display: inline;
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: red;
+}
+
+.map-wrapper{
+  height: 75vh;
+  position: relative;
+  width: 100%;
+}
+
+
+.footer{
+  background: black;
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  z-index: 2500;
+}
+
+.toggle-evictions{
+  color: #b30000;
+  font-family: 'Courier New';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#legend {
+  background: #D3D3D3;
+  padding: 15px;
+  position: relative;
+  top: 15px;
+  left: 55px;
+  z-index: 2000;
+  width: 20%;
+  box-shadow: 5px 10px #888888;
+}
+
+.legend-header {
+  margin-bottom: 10px;
+  font-family: 'Courier New';
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #595959;
+}
+
+.legend-subheader{
+   margin-bottom: 10px;
+  font-family: 'Courier New';
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.legend-text{
+   margin-bottom: 10px;
+  font-family: 'Courier New';
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.legend-marker {
+  display: inline-block;
+  background: red;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.legend-marker-red {
+  display: inline-block;
+  background: #f7e96d;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.legend-marker-yellow {
+  display: inline-block;
+  background: #d9726b;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.legend-marker-blue {
+  display: inline-block;
+  background: #55979c;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.legend-marker-green {
+  display: inline-block;
+  background: #438b31;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.legend-marker-black {
+  display: inline-block;
+  background: black;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}

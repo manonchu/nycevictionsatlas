@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/redlining.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/redlining.js" defer></script>
+    
+       <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    <link href="./redlining.css" rel="stylesheet">
+    
+  </head>  
+  <body>
+    <heading>
+          <span><h1>EVICTIONS & REDLINING</h1></span>
+           <ul class="menu">
+          <li><a href="index.html">     HOME     | </a></li>
+          <li><a href="evictors.html">      EVICTORS     | </a></li>
+          <li><a href="redlining.html">      REDLINING     | </a></li>
+          <li><a href="race.html">      RACE      | </a></li>
+          <li><a href="pledge.html">      TAKE THE PLEDGE      </a></li>
+          </ul>
+      <div style="clear: both;">
+    </div>
+    </heading>
+    
+      <div class="map-wrapper">
+      <div id="map"></div>
+       
+       <div id="legend">
+        <div class="legend-header">
+          Map Legend
+        </div>
+         <div class="legend-subheader">
+          1930s HOLC Map Rating
+        </div>
+        <div>
+          <span class="legend-marker-green"></span> 
+          <span class="legend-text"> A "BEST" </span>
+        </div>
+         <div>
+          <span class="legend-marker-blue"></span> 
+          <span class="legend-text"> B "STILL DESIRABLE" </span> 
+        </div>
+         <div>
+          <span class="legend-marker-yellow"></span> 
+           <span class="legend-text"> C "DEFINITELY DECLINING"</span>
+        </div>
+         <div>
+          <span class="legend-marker-red"></span> 
+           <span class="legend-text">D "HAZARDOUS"</span>
+        </div>
+         
+         <div>
+        <a style="font-size: 9px; color: #9F9FA0; margin-bottom: 15px;"
+        <a href="https://dsl.richmond.edu/panorama/redlining/#loc=11/40.6540/-73.9490&opacity=0.8&city=brooklyn-ny/'target='_blank">Data via Mapping Inequality </a>
+        </div>
+        
+        <div class="legend-subheader">
+            <br> 
+            <div>
+          <span class="legend-marker-black"></span> 
+          <span class="legend-text"> Marshal Evictions (2018) </span>
+          </div>
+          </div>
+      
+           <div>
+          <a style="font-size: 9px; color: #9F9FA0; margin-bottom: 15px;"
+          <a href="https://data.cityofnewyork.us/City-Government/Evictions/6z8x-wfk4"target="_blank"> Data via NYC Open Data </a>
+          </div>
+    
+      </div>
+       
+      <div class="buttons">
+        <button class="toggle-evictions">
+          SHOW OR HIDE EVICTIONS
+        </button>
+      </div>
+    </div>
+    
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    <script src="./redlining.js"></script>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  
+  
+  </body>
+
+  <div class="footer">
+     <h2> ABOUT THIS MAP </h2>
+    <br> Evictions inscribe themselves in a long cycle of racialized disinvestment-reinvestment. In the 1930s, the federal government instituted a national policy of mortgage lending based on racial hierarchies. 
+    Maps of every major American city were drawn up to determine how "safe" each neighborhood was to receive loans from the Homeowner Loans Corporation (HOLC) based on a rating. 
+    Any neighborhood that had more than 5% Black residents was immediately "redlining," deemed to risky for mortgage lending. 
+    Based on these racist assumptions, POC neighborhoods across the US were systematically dinsvested, while white families were offered loans to flee urban centers and setlle in affluent suburbs to pursue the American dream of homeownership. <br/>
+    
+    <br>"White flight" was facilitated by the federal urban renewal program in the postwar context, which tore down neighborhoods deemed "blighted" or depressed to make way for highways that made commuting from suburbs to urban job centers much easier. 
+    Thousands of families, primarily in communities of color, were uprooted by urban renewal under the guidance of Robert Moses in NYC, destroyigns the urban fabric and social networks of these neighbrhoods. 
+    After redlining barred entire neighborhoods out of the mortagage system and urban renewal tore them apart, many neighborhoods faced hardships. <br/>
+   
+    <br>Throughout the 1970s, the City of New York insituted a policy of "planned shrinkage," where neighborhoods deemed worthless saw their public services shut down. 
+    The "Decade of Fire" in the Bronx is the most infamous example of how the City faciltiated the near-decimation of an entire borough.<br/>
+    
+    <br> To visualize how the afterlives of racialized urban planning impact New Yorkers today, visit the <a href="https://nyc-evictions-atlas.glitch.me/race.html"> Race & Evictions </a> map of this Atlas.
+  </div>
+
+</html>
+    
+   

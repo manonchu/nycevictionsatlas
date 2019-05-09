@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/pledge.css">
+    
+     <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+  </head>  
+  <body>
+    <h1>THE ANTI-EVICTION PLEDGE </h1>
+    
+    <ul class="menu">
+    <li><a href="index.html">     HOME     | </a></li>
+    <li><a href="evictors.html">      EVICTORS     | </a></li>
+    <li><a href="redlining.html">      REDLINING     | </a></li>
+     <li><a href="race.html">      RACE      | </a></li>
+    <li><a href="pledge.html">      TAKE THE PLEDGE      </a></li>
+  </ul>
+    
+    <div id="map">
+   <input class="address-search" type="text" placeholder="Search for an address" />
+     </div>
+    
+    <div class="sidebar">
+    <h1> TAKE A STAND </h1>
+      
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://evictions-pledgemap-nyc.glitch.me/thanks.html';}"></iframe>
+      
+    <script>console.log(submitted);</script>
+
+      <p class="pledgetext">
+        I pledge not to rent or buy any unit that is available as the result of an eviction.
+      </p>
+      
+      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScXNoo5weKntLVbw1UjhW9-CCYa36L4pRg2aLsfmqGNkDaF8g/formResponse"method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+        <div>
+          <label for="firstname">First Name</label>
+          <br></br> 
+          <input id= "firstname" type="text" name="entry.1733123587"/>
+        </div>
+      <br></br>
+      <div>
+          <label for="lastname">Last Name</label>
+          <br></br> 
+          <input id= "lastname" type="text" name="entry.1166518654"/>
+    </div>
+      <br></br>
+      <div>
+          <label for="email">E-mail</label>
+          <br></br> 
+          <input id= "email" type="text" name="entry.65918269"/>
+      </div>
+      <br></br> 
+       <div>
+          <label for="description">Why is this important to you?</label>
+          <br></br> 
+          <textarea id= "description" type="text" name="entry.358575206"/></textarea> 
+      </div>
+      <br></br> 
+
+       <div>
+      <input type="submit" value="Submit" />
+      </div>
+    
+      </form>
+    </div>
+
+
+      <div class="footer">
+        <h2>
+          Pledge Signatures:
+        </h2>
+        <!-- We create a div where the feature data will go when clicked on: -->
+        <div class="footer-feature-content"></div>
+      </div>
+   </div>
+    
+    <script class="footer-group-template" type="x-tmpl-mustache">
+      <ul style="list-style-type:none;">
+          {{#rows}}
+          <li>{{first_name}}</li>
+          <li>{{last_name}}</li>
+          <li>{{why_is_this_important_to_you}}</li>
+          <br></br>
+        {{/rows}}
+      </ul>
+    </script>
+
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    
+    <!-- Load Promises polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    
+    <!-- Load Fetch polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.4/fetch.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+    
+    <script src="./pledge.js"></script>
+  </body>
+</html>
