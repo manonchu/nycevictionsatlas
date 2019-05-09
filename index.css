@@ -1,0 +1,69 @@
+.menu{
+  width: 550px;
+  height: 80px;
+  float: right;
+  list-style-type: none;
+  z-index: 1;
+  padding-top:20px;
+  padding-left:0px;
+}
+
+.menu li{
+  display: inline;
+  font-size: 15px;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  color: white;
+  background: black;
+}
+
+body2{
+  font-family: "Avenir Next", sans-serif;
+  color: white;
+  margin: 2em;
+}
+
+h1 {
+    color: #f9faf3;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: .05em;
+    margin: 0 0 .2em 0;
+    text-shadow: 4px 4px 0px #cc0029;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding-left: 20px;
+    float: left;
+}
+
+a{
+  color:#AA35EC;
+  font-size:1em;
+  font-family: "Avenir Next", sans-serif;
+  letter-spacing:2px;
+}
+
+.box{
+  background: gray;
+  height: 100vh;
+  width: 100%;
+  float: left;
+  padding-left:20px;
+  padding-top: 20px;
+  padding-right:20px;
+  padding-bottom:20px;
+}

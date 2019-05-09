@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/race.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/race.js" defer></script>
+    
+       <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    <link href="./race.css" rel="stylesheet">
+    
+  </head>  
+    <body>
+      <heading>
+          <span><h1>RACE & EVICTIONS</h1></span>
+           <ul class="menu">
+          <li><a href="index.html">     HOME     | </a></li>
+          <li><a href="evictors.html">      EVICTORS     | </a></li>
+          <li><a href="redlining.html">      REDLINING     | </a></li>
+          <li><a href="race.html">      RACE      | </a></li> 
+          <li><a href="pledge.html">      TAKE THE PLEDGE      </a></li>
+          </ul>
+      </heading>
+       <div style="clear: both;">
+      </div>
+      
+    <div class="map-wrapper">
+      <div id="map"></div>
+          <select class="layer-picker">
+          <option value ="all"> Show all neighborhoods </option> 
+          <option value="PctBlack">Predominantly Black neighborhoods</option>
+          <option value="Pct_Hispanic">Predominantly Latinx neighborhoods</option>
+          <option value="PctAsian">Predominantly Asian neighborhoods</option>
+          <option value="PctWhite">Predominantly White neighborhoods</option>
+          </select>
+      
+      <div id="legend">
+          <div class="legend-header">
+          Map Legend
+          </div>
+           <div class="legend-subheader">
+          Predominant Population by Race & Ethinicity
+          </div>
+          <div>
+          <span class="legend-marker-blue"></span> 
+          <span class="legend-text"> Black </span>
+          </div>
+           <div>
+          <span class="legend-marker-green"></span> 
+          <span class="legend-text"> Latinx </span> 
+          </div>
+           <div>
+           <span class="legend-marker-yellow"></span> 
+           <span class="legend-text"> Asian </span>
+          </div>
+           <div>
+          <span class="legend-marker-purple"></span> 
+           <span class="legend-text">White </span>
+          </div>
+         
+          <div>
+          <a style="font-size: 9px; color: #9F9FA0; margin-bottom: 15px;"
+          <a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml"target="_blank"> Data via American Fact Finder </a>
+          </div>
+          
+          <div class="legend-subheader">
+            <br> 
+            <div>
+          <span class="legend-marker-black"></span> 
+          <span class="legend-text"> Marshal Evictions (2018) </span>
+          </div>
+          </div>
+      
+           <div>
+          <a style="font-size: 9px; color: #9F9FA0; margin-bottom: 15px;"
+          <a href="https://data.cityofnewyork.us/City-Government/Evictions/6z8x-wfk4"target="_blank"> Data via NYC Open Data </a>
+          </div>
+      
+      
+      </div>      
+    </div>
+     <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    <script src="./race.js"></script>
+
+  </body>
+  
+    <div class="footer">
+     <h2> ABOUT THIS MAP </h2>
+    
+    <br> After decades of racialized disinvestment through <a href="https://nyc-evictions-atlas.glitch.me/redlining.html"> redlining </a> and urban renewal and hard-won battles by community organizations, communites of color across New York City are now at the frontier of gentrifation. 
+    Far from being a coincidence, this neighborhoods present what critical geographer calls a "Rent Gap" - a profitable discrepancy between current property values and potential future values based on city policy. 
+    Real estate developers have their eyes on the prize. Through city policies such as rezonings, these neighborhoods are being revalued overnight, paving the way for predatory speculative development and a new wave of displacement.
+    It is within this context of "racial capitalism," embodied by longstanding racialized urban planning policies that benefit the private sector while dispoessing the poor, that we must understand gentrification and displacement today. 
+    
+  </div>
+  
+  </html>
